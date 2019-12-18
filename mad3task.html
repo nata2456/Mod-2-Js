@@ -1,0 +1,81 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <table>
+        <thead>
+
+            <th>Прізвище та ініціали</th>
+            <th>Стать</th>
+            <th>Рік народження</th>
+            <th>Освіта</th>
+            <th>Спеціальність</th>
+            <th>Дата прийняття на облік</th>
+        </thead>
+        <tbody id="info">
+
+        </tbody>
+    </table>
+
+    <script>
+        let employment = [
+            {
+                surmane: 'Грицюк І.Г.',
+                sex: 'male',
+                birthdate: '13.05.1988',
+                background: 'вища',
+                profession: 'економіст',
+                date: "13.12.2015"
+            },
+            {
+                surmane: 'Дудка О.Л.',
+                sex: 'female',
+                birthdate: '08.04.1978',
+                background: 'вища',
+                profession: 'програміст',
+                date: ' 12.11.2017'
+            },
+            {
+                surmane: 'Дудка О.Л.',
+                sex: 'female',
+                birthdate: '08.04.1978',
+                background: 'вища',
+                profession: 'програміст',
+                date: ' 12.11.2017'
+            },
+            {
+                surmane: 'Дудка О.Л.',
+                sex: 'female',
+                birthdate: '08.04.1978',
+                background: 'вища',
+                profession: 'програміст',
+                date: ' 12.11.2017'
+            },
+            {
+                surmane: 'Дудка О.Л.',
+                sex: 'female',
+                birthdate: '08.04.1978',
+                background: 'вища',
+                profession: 'програміст',
+                date: ' 12.11.2017'
+            },
+
+        ]
+
+        let t = document.getElementById('info');
+
+        for (let i = 0; i < competition.length; i++) {
+            let person = employment[i];
+
+            t.innerHTML += `<tr><td>${person.surname}</td><td>${person.sex}</td><td>${person.birthdate}</td><td>${person.background}</td><td>${person.profession}</td><td>${person.date.join(', ')}</td></tr>`;
+        }
+    </script>
+</body>
+
+</html>

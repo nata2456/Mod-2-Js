@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <style>
+        body{
+            width : 800px;
+            margin-left: 25%;
+            background:#ccc5c5
+        }
+    </style>
+   <h3> <label>гривні <br/><input type="number" name="grivnas" id="grivnas"></label><br/></h3>
+   <button id="button1">convert</button><br/>
+    <h3><label>канадський долар<br/> <input type="number" name="dolar" id="dolar"></label></h3>
+    
+    <script>
+        function dolars(x) {
+            return x / 17.84;
+        }
+
+        let button1 = document.getElementById("button1");
+        button1.onclick = function (x) {
+            let minutes = parseFloat(document.getElementById("grivnas").value);
+            document.getElementById("dolar").value = dolars(minutes);
+
+
+        }
+    
+    </script>
+</body>
+
+</html>
